@@ -15,14 +15,14 @@
 <meta property="og:site_name" content="myblog">
 <meta property="og:description" content="ES6新增语法">
 <meta property="og:locale">
-<meta property="og:image" content="https://img2020.cnblogs.com/blog/1876980/202003/1876980-20200304144830078-997213412.png">
-<meta property="og:image" content="https://img2020.cnblogs.com/blog/1876980/202003/1876980-20200304150255654-3269354.png">
-<meta property="og:image" content="https://img2020.cnblogs.com/blog/1876980/202003/1876980-20200304153721677-1720053751.png">
+<meta property="og:image" content="https://i.loli.net/2020/08/19/ERr7PpsfG1Sy6Wq.png">
+<meta property="og:image" content="https://i.loli.net/2020/08/19/GdDicMZaHp8jYW7.png">
+<meta property="og:image" content="https://i.loli.net/2020/08/19/AeTEf9yHQJig8WX.png">
 <meta property="article:published_time" content="2020-08-19T13:16:55.000Z">
-<meta property="article:modified_time" content="2020-08-19T15:37:36.016Z">
+<meta property="article:modified_time" content="2020-08-19T15:52:22.048Z">
 <meta property="article:author" content="zkai">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img2020.cnblogs.com/blog/1876980/202003/1876980-20200304144830078-997213412.png">
+<meta name="twitter:image" content="https://i.loli.net/2020/08/19/ERr7PpsfG1Sy6Wq.png">
   
     <link rel="alternative" href="/atom.xml" title="myblog" type="application/atom+xml">
   
@@ -223,7 +223,7 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">consloe.log(a) &#x2F;&#x2F; a is not defined</span><br><span class="line">let a &#x3D; 20;</span><br></pre></td></tr></table></figure>
 
-<h2 id="经典面试题"><a href="#经典面试题" class="headerlink" title="经典面试题"></a>经典面试题</h2><p><img src="https://img2020.cnblogs.com/blog/1876980/202003/1876980-20200304144830078-997213412.png" alt="经典面试题1"><br><img src="https://img2020.cnblogs.com/blog/1876980/202003/1876980-20200304150255654-3269354.png" alt="经典面试题2"></p>
+<h2 id="经典面试题"><a href="#经典面试题" class="headerlink" title="经典面试题"></a>经典面试题</h2><p><img src="https://i.loli.net/2020/08/19/ERr7PpsfG1Sy6Wq.png" alt="面试题1.png"><br><img src="https://i.loli.net/2020/08/19/GdDicMZaHp8jYW7.png" alt="面试题2.png"></p>
 <hr>
 <h2 id="2-const"><a href="#2-const" class="headerlink" title="2. const"></a>2. const</h2><h2 id="作用：声明常量，常量就是值-内存地址-不能变化的量"><a href="#作用：声明常量，常量就是值-内存地址-不能变化的量" class="headerlink" title="作用：声明常量，常量就是值(内存地址)不能变化的量"></a>作用：声明常量，常量就是值(内存地址)不能变化的量</h2><ul>
 <li><h2 id="具有块级作用域"><a href="#具有块级作用域" class="headerlink" title="具有块级作用域"></a>具有块级作用域</h2></li>
@@ -246,7 +246,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line">    &#x2F;&#x2F; 1. 使用const关键字声明的常量具有块级作用域</span><br><span class="line">    &#x2F;&#x2F; if (true) &#123;</span><br><span class="line">    &#x2F;&#x2F;  const a &#x3D; 10;</span><br><span class="line">    &#x2F;&#x2F;  if (true) &#123;</span><br><span class="line">    &#x2F;&#x2F;      const a &#x3D; 20;</span><br><span class="line">    &#x2F;&#x2F;      console.log(a);&#x2F;&#x2F;20</span><br><span class="line">    &#x2F;&#x2F; &#125;</span><br><span class="line">    &#x2F;&#x2F; console.log(a);&#x2F;&#x2F;10</span><br><span class="line">    &#x2F;&#x2F; &#125;</span><br><span class="line">    &#x2F;&#x2F; console.log(a);&#x2F;&#x2F;报错</span><br><span class="line">    &#x2F;&#x2F; 2. 使用const关键字声明的常量必须赋初始值</span><br><span class="line">    &#x2F;&#x2F; const PI;&#x2F;&#x2F;报错</span><br><span class="line">    &#x2F;&#x2F; 3. 常量声明后值不可更改 </span><br><span class="line">    const PI &#x3D; 3.14;</span><br><span class="line">    &#x2F;&#x2F; PI &#x3D; 100;&#x2F;&#x2F;报错</span><br><span class="line">    const ary &#x3D; [100, 200];</span><br><span class="line">    ary[0] &#x3D; 123; &#x2F;&#x2F;不报错  ary在内存中的地址没变</span><br><span class="line">    ary &#x3D; [1, 2] &#x2F;&#x2F;报错  因为改变了ary在内存中的存储地址</span><br><span class="line">    console.log(ary);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h2 id="var-let-const的区别"><a href="#var-let-const的区别" class="headerlink" title="var let const的区别"></a>var let const的区别</h2><p>  <img src="https://img2020.cnblogs.com/blog/1876980/202003/1876980-20200304153721677-1720053751.png" alt="1"></p>
+<h2 id="var-let-const的区别"><a href="#var-let-const的区别" class="headerlink" title="var let const的区别"></a>var let const的区别</h2><p> <img src="https://i.loli.net/2020/08/19/AeTEf9yHQJig8WX.png" alt="区别"></p>
 <hr>
 <h1 id="3-解构赋值"><a href="#3-解构赋值" class="headerlink" title="3.解构赋值"></a>3.解构赋值</h1><ul>
 <li>1.数组解构</li>
